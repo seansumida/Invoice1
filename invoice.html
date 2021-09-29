@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* invoice 1 wod*/
+        // Product 1
+     var item1 = 'Gillette Sensor 3 Razor';
+     var quantity1 = 2;
+     var price1 = 1.23;
+     var extendedPrice1 = price1 * quantity1;
+
+     // Product 1
+     var item2 = 'Barbasol Shaving Cream';
+     var quantity2 = 1;
+     var price2 = 2.64;
+     var extendedPrice2 = price2 * quantity2;
+
+     // Product 1
+     var item3 = 'Nautica Cologne';
+     var quantity3 = 1;
+     var price3 = 6.17;
+     var extendedPrice3 = price3 * quantity3;
+
+     // Product 1
+     var item4 = 'Rubbing Alcohol';
+     var quantity4 = 3;
+     var price4 = 0.98;
+     var extendedPrice4 = price4 * quantity4;
+
+     // Product 1
+     var item5 = 'Colgate Classic Toothbrush';
+     var quantity5 = 12;
+     var price5 = 1.89;
+     var extendedPrice5 = price5 * quantity5;
+
+     var subTotal = extendedPrice1 +extendedPrice2 + extendedPrice3 +extendedPrice4 + extendedPrice5;
+     var tax = subTotal * 0.0575;
+     var total = subTotal + tax;
+    </script>
+</head>
+<body>
+    <script>
+        document.write(`
+        <table border="1" style="margin-left: auto; margin-right: auto; text-align: center;">
+        <tr>
+            <td>Item</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Extended Price</td>
+        </tr>    
+        <tr>
+            <td>${item1}</td>
+            <td>${quantity1}</td>
+            <td>$${price1}</td>
+            <td>$${extendedPrice1}</td>
+        </tr>
+        <tr>
+            <td>${item2}</td>
+            <td>${quantity2}</td>
+            <td>$${price2}</td>
+            <td>$${extendedPrice2}</td>
+        </tr>
+        <tr>
+            <td>${item3}</td>
+            <td>${quantity3}</td>
+            <td>$${price3}</td>
+            <td>$${extendedPrice3}</td>
+        </tr>
+        <tr>
+            <td>${item4}</td>
+            <td>${quantity4}</td>
+            <td>$${price4}</td>
+            <td>$${extendedPrice4}</td>
+        </tr>
+        <tr>
+            <td>${item5}</td>
+            <td>${quantity5}</td>
+            <td>$${price5}</td>
+            <td>$${extendedPrice5}</td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>Sub-Total</td>
+            <td>$${subTotal}</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>$${tax.toFixed(2)}</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td><b>$${total.toFixed(2)}</b></td>
+        </tr>
+    </table>
+        `)
+    </script>
+</body>
+</html>
